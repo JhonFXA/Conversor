@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Conversor de Moedas, Temperaturas e Medidas.</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <h1 class="page-title">Conversor</h1>
+  <p class="page-subtitle">
+    Converta moedas,temperaturas e medidas!
+  </p>
+
+  <section class="border center">
+    <div>
+
+      <h2>Conversão de moedas</h2>
+      <br>
+      <label for="valor">Insira o valor em R$</label>
+      <br>
+      <input placeholder="R$" type="number" id="valor" size="2" />
+      <button type="submit" onclick="converterMoeda()">Converter</button>
+    </div>
+    <br>
+    <div class="resultado flex-container">
+      <article class="resultado__caixa">
+        <h3 class="resultado__subtitulo">Dólar (usd)</h3>
+        <p id="resultado__texto--dolar" class="resultado__texto"></p>
+      </article>
+
+      <article class="resultado__caixa">
+        <h3 class="resultado__subtitulo">Euro (eur)</h3>
+        <p id="resultado__texto--euro" class="resultado__texto"></p>
+      </article>
+
+      <article class="resultado__caixa">
+        <h3 class="resultado__subtitulo">Iene (JPY)</h3>
+        <p id="resultado__texto--iene" class="resultado__texto"></p>
+      </article>
+
+    </div>
+  </section>
+  <br>
+
+  <section class="border center">
+    <div>
+
+      <h2>Conversão de temperatura</h2>
+      <br>
+      <label for="celsius">Insira a temperatura em Celsius<br>
+        <input placeholder="ºC" type="number" id="celsius" size="2">
+
+      </label>
+      <button type="submit" onclick="converterTemperatura()">Converter</button>
+    </div>
+    <br>
+    <div class="resultado flex-container">
+      <article class="resultado__caixa resultado__caixa--temperatura">
+        <h3 class="resultado__subtitulo">FAHRENHEIT (ºF)</h3>
+        <p id="resultado__texto--f" class="resultado__texto"></p>
+      </article>
+
+      <article class="resultado__caixa resultado__caixa--temperatura">
+        <h3 class="resultado__subtitulo">KELVIN (ºK)</h3>
+        <p id="resultado__texto--k" class="resultado__texto"></p>
+      </article>
+    </div>
+  </section>
+  <br>
+
+  <section class="border center">
+    <div>
+      <h2>Conversor de medida em Km</h2>
+      <label for="km">Insira a medida em Km
+        <br>
+        <input type="number" placeholder="Km" id="km">
+      </label>
+      <button type="submit" onclick="converterMedida()">Converter</button>
+    </div>
+    <div class="resultado flex-container">
+      <article class="resultado__caixa resultado__caixa--medida">
+        <h3 class="resultado__subtitulo">Metros (m)</h3>
+        <p id="resultado__texto--m" class="resultado__texto"></p>
+      </article>
+
+      <article class="resultado__caixa resultado__caixa--medida">
+        <h3 class="resultado__subtitulo">CENTÍMETROS (CM)</h3>
+        <p id="resultado__texto--cm" class="resultado__texto"></p>
+      </article>
+    </div>
+  </section>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

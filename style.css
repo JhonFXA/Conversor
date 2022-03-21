@@ -1,0 +1,101 @@
+body {
+  font-family: OCR A Std, monospace;
+  min-height: 400px;
+  background-image: url("https://wallpapercave.com/wp/wp4676582.jpg");
+  background-color: #0a012b;
+  background-size: 250vh;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  height: 50vh;
+}
+
+.page-title {
+  text-shadow: 5px 0 0px black;
+  color: white;
+  font-size: 60px;
+}
+
+.page-subtitle {
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+}
+
+.page-logo {
+  width: 100px;
+}
+
+label {
+  font-style: italic;
+  font-weight: bold;
+  color: white;
+}
+
+.center {
+  margin: 0 auto 30px;
+}
+
+.border {
+  border: solid #1e0227;
+  background: linear-gradient(90deg, #8d0227, #c65e51);
+  padding: 10px;
+  width: 50%;
+}
+
+button {
+  color: #1e0227;
+  font-family: OCR A Std, monospace;
+  background-color: pink;
+  font-size: 20px;
+  border: solid 3px #1e0227;
+  border-radius: 10px;
+}
+
+.result {
+  color: white;
+  background-color: red;
+}
+
+.destaque {
+  color: green;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.resultado__caixa {
+  width: 30%;
+  margin: 20px;
+  border: solid;
+  text-shadow: 0 0 5px white;
+  box-shadow: 5px 10px;
+}
+
+.resultado__subtitulo {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.4em;
+}
+
+.resultado__texto {
+  display: inline-block;
+  padding: 5px;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.resultado__caixa--temperatura {
+  width: 200%;
+}
+
+.resultado__caixa--medida {
+  width: 200%;
+}
